@@ -63,6 +63,8 @@ You render them like so:
 
 ![screencapture-localhost-3000-1486314996688](https://cloud.githubusercontent.com/assets/3382565/22628156/1581950e-ec0a-11e6-9a15-4ed2b7d3d816.png)
 
+Checkout full examples [here](https://github.com/chentsulin/styled-css-modules-component/blob/master/examples/basic/components/App.js).
+
 
 ### Passed props
 
@@ -100,6 +102,9 @@ You can just pass a `placeholder` prop into the `styled-css-modules-component`. 
 ```
 
 ![2017-02-06 1 23 26](https://cloud.githubusercontent.com/assets/3382565/22628206/f20db8fe-ec0a-11e6-9980-36a6090cb3e1.png)
+
+Checkout full examples [here](https://github.com/chentsulin/styled-css-modules-component/blob/master/examples/passed-props/components/App.js).
+
 
 ## Relevant Projects
 
