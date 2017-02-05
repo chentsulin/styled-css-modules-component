@@ -1,0 +1,69 @@
+{
+  "name": "styled-css-modules-component",
+  "version": "0.0.1",
+  "description": "Build styled component with css-modules",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": "chentsulin/styled-css-modules-component",
+  "scripts": {
+    "clean": "rimraf lib dist coverage",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "test:cov": "npm test -- --coverage",
+    "check": "npm run lint && npm run test",
+    "build:lib": "babel src --out-dir lib --ignore __tests__",
+    "build:umd": "webpack src/index.js dist/styled-css-modules-component.js --config webpack.config.dev.js",
+    "build:umd:min": "webpack src/index.js dist/styled-css-modules-component.min.js --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:lib && npm run build:umd && npm run build:umd:min",
+    "preversion": "npm run clean && npm run check",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags && npm run clean",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "author": {
+    "name": "C.T. Lin",
+    "email": "chentsulin@gmail.com",
+    "url": "github.com/chentsulin/styled-css-modules-component"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-flow": "^1.0.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "enzyme": "^2.7.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "jest-cli": "^18.1.0",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {},
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/lib"
+    ]
+  }
+}
