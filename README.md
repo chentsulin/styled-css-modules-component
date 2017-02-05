@@ -80,12 +80,12 @@ You render them like so:
 
 Styled components pass on all their props. This is a styled `<input>`:
 
+```js
 import React from 'react';
 import styled from 'styled-css-modules-components';
 
 import styles from './styles.css';
 
-```js
 // Create an <Input> component that'll render an <input> tag with some styles
 const Input = styled.input(styles.input);
 ```
