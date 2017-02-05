@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'react-css-modules-component';
+import styled from 'react-css-modules-component'; // eslint-disable-line
 
 import styles from './App.css';
 

@@ -37,7 +37,7 @@ module.exports = {
       test: /\.css$/,
       loaders: [
         'style-loader',
-        'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' // eslint-disable-line max-len
+        'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', // eslint-disable-line max-len
       ],
     }],
   },

@@ -1,6 +1,6 @@
 // @flow
 
-import { createElement } from 'react'
+import { createElement } from 'react';
 
 import validAttr from '../shared/validAttr';
 import isTag from '../shared/isTag';
@@ -25,7 +25,7 @@ export default () => {
       static cssModuleName: string;
 
       render() {
-        const { className, children, innerRef } = this.props
+        const { className, children, innerRef } = this.props;
 
         const propsForElement = {};
 
@@ -52,7 +52,7 @@ export default () => {
     StyledComponent.displayName = isTag(target) ? `styled.${target}` : `Styled(${(target.displayName || target.name)})`;
 
     return StyledComponent;
-  }
+  };
 
   return createStyledComponent;
-}
+};

@@ -1,6 +1,21 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
   "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }],
+    "no-prototype-builtins": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "react/prefer-stateless-function": "off"
   }
 }
