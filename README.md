@@ -10,9 +10,11 @@
 
 ## Install
 
-```
+```sh
 $ npm install styled-css-modules-component
 ```
+
+> Note: You must setup your own css-modules environment.
 
 ## Usage
 
@@ -99,6 +101,10 @@ You can just pass a `placeholder` prop into the `styled-css-modules-component`. 
 
 ![2017-02-06 1 23 26](https://cloud.githubusercontent.com/assets/3382565/22628206/f20db8fe-ec0a-11e6-9980-36a6090cb3e1.png)
 
+## Relevant Projects
+
+- [styled-component](https://github.com/styled-components/styled-components)
+- [css-literal-loader](https://github.com/4Catalyzer/css-literal-loader)
 
 ## License
 
