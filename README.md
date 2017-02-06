@@ -6,7 +6,9 @@
 
 > Build styled component with css-modules
 
-`styled-component` force developers use clearer way to add styles to the components which is awesome, but after `radium`、`aphrodite` and some other CSS-in-JS libraries involved, there are still some difficult unsolved issues in that area. And `css-modules` is a good choice for getting modularization without being as cutting-edge as the CSS-in-JS approaches.
+`styled-component` force developers use clearer way to add styles to the components which is awesome, but after `radium`、`aphrodite` and some other CSS-in-JS libraries involved, there are still some difficult unsolved issues in that area.
+
+`css-modules` is a good choice for getting modularization without being as cutting-edge as the CSS-in-JS approaches, and you can just write css and get full superpower from PostCSS ecosystem.
 
 ## Install
 
