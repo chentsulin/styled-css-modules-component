@@ -7,7 +7,7 @@
   "repository": "chentsulin/styled-css-modules-component",
   "scripts": {
     "clean": "rimraf lib dist coverage",
-    "lint": "eslint src examples",
+    "lint": "eslint src",
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "test:cov": "npm test -- --coverage",
