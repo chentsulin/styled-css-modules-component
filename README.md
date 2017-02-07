@@ -108,6 +108,53 @@ You can just pass a `placeholder` prop into the `styled-css-modules-component`. 
 Checkout full examples [here](https://github.com/chentsulin/styled-css-modules-component/blob/master/examples/passed-props/components/App.js).
 
 
+## Third-party components
+
+`styles.css`:
+
+```css
+.link {
+  color: palevioletred;
+  display: block;
+  margin: 0.5em 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+```
+
+The above also works perfectly for styling third-party components, like a `react-router` `<Link />`!
+
+```js
+import styled from 'styled-components';
+import { Link } from 'react-router';
+
+const StyledLink = styled(Link)(styles.link);
+```
+
+```jsx
+<Link to="/">Standard, unstyled Link</Link>
+<StyledLink to="/">This Link is styled!</StyledLink>
+```
+
+![2017-02-07 1 50 27](https://cloud.githubusercontent.com/assets/3382565/22679409/e86ab850-ed3c-11e6-81cf-3d06dfb36aab.png)
+
+Checkout full examples [here](https://github.com/chentsulin/styled-css-modules-component/blob/master/examples/third-party-components/components/App.js).
+
+
+## Animations
+
+Directly supported by CSS.
+
+
+## Overriding component styles & Theming
+
+See the long discusses at [css-modules #147](https://github.com/css-modules/css-modules/issues/147).
+
+
+## React Native
+
+Not supported.
+
+
 ## Relevant Projects
 
 - [styled-component](https://github.com/styled-components/styled-components)
