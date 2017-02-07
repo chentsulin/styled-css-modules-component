@@ -1,6 +1,6 @@
 {
   "name": "styled-css-modules-component",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Build styled component with css-modules",
   "main": "lib/index.js",
   "license": "MIT",
