@@ -16,7 +16,7 @@
 $ npm install styled-css-modules-component
 ```
 
-> Note: You must setup your own css-modules environment.
+> Note: You have to setup your own css-modules environment.
 
 ## Usage
 
