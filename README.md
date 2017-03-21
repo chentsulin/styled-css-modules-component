@@ -124,7 +124,7 @@ Checkout full examples [here](https://github.com/chentsulin/styled-css-modules-c
 The above also works perfectly for styling third-party components, like a `react-router` `<Link />`!
 
 ```js
-import styled from 'styled-components';
+import styled from 'styled-css-modules-components';
 import { Link } from 'react-router';
 
 const StyledLink = styled(Link)(styles.link);
